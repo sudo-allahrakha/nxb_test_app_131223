@@ -8,6 +8,7 @@ const userSchema = new mongoose.Schema({
     contact: {type:String},
     address: {type:String, required:true},
     isActive: {type:Boolean},
+    password: {type:String, required:true}
   });
   
   const User = mongoose.model("User", userSchema);
